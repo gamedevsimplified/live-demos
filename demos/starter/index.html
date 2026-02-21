@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-us">
   <head>
     <meta charset="utf-8" />
@@ -19,7 +19,6 @@
       <div id="unity-warning"></div>
       <div id="unity-footer">
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Starter 3rd person template</div>
       </div>
     </div>
     <script>
@@ -55,11 +54,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/integration-3rd-person-2022.3.loader.js";
+      var name = "integration-3rd-person-2022.3";
+      var loaderUrl = `${buildUrl}/${name}.loader.js`;
       var config = {
-        dataUrl: buildUrl + "/integration-3rd-person-2022.3.data",
-        frameworkUrl: buildUrl + "/integration-3rd-person-2022.3.framework.js",
-        codeUrl: buildUrl + "/integration-3rd-person-2022.3.wasm",
+        dataUrl: `${buildUrl}/${name}.data`,
+        frameworkUrl: `${buildUrl}/${name}.framework.js`,
+        codeUrl: `${buildUrl}/${name}.loader.wasm`,
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "webgl-export-2022.3-urp",
